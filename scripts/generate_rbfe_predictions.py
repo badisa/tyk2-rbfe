@@ -180,6 +180,9 @@ def main():
                     np.linalg.norm(res.final_result.dG_errs)
                 )
                 edge_data[f"{leg_name}_windows"] = len(res.final_result.initial_states)
+                edge_data[f"{leg_name}_min_overlap"] = min(
+                    bar.overlap for bar in res.final_result.bar_results
+                )
                 update_output_data_with_edge_data(edge_data)
 
 
