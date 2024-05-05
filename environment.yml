@@ -1,0 +1,9 @@
+name: tyk2-al
+channels:
+  - conda-forge
+  - openeye
+dependencies:
+  - python=3.10.10
+  - jax=0.4.14
+  - jaxlib=0.4.14=cpu*
+  - openmm=8.0.0
