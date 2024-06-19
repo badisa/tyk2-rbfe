@@ -1,4 +1,4 @@
-timemachine @ git+https://github.com/proteneer/timemachine@master
+timemachine @ git+https://github.com/proteneer/timemachine@c9191b561f7db1434774cc3b644c4817d5d23865
 numpy==1.23.5
 scipy==1.10.1
 pymbar==3.1.0
