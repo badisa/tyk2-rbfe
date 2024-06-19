@@ -36,6 +36,7 @@ def main():
     parser.add_argument("pdb_file", help="Path to pdb file containing structure")
     parser.add_argument("edges_json", help="Json list containing pairs of mol names")
     parser.add_argument("--testing", action="store_true")
+    parser.add_argument("--legs", default=["vacuum", "solvent", "complex"], nargs="+")
     parser.add_argument(
         "output_json", help="Output json file, if exists will concatenate to it"
     )
@@ -155,7 +156,7 @@ def main():
             )[0]
             update_output_data_with_edge_data(edge_data)
         core = np.array(edge_data["core"])
-        for leg_name in ["vacuum", "solvent", "complex"]:
+        for leg_name in args.legs:
             if f"{leg_name}_pred_ddg" not in edge_data:
                 if leg_name == "vacuum":
                     res = run_vacuum(
