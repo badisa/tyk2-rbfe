@@ -155,7 +155,7 @@ def main():
             )[0]
             update_output_data_with_edge_data(edge_data)
         core = np.array(edge_data["core"])
-        for leg_name in ["vacuum"]:
+        for leg_name in ["vacuum", "solvent", "complex"]:
             if f"{leg_name}_pred_ddg" not in edge_data:
                 if leg_name == "vacuum":
                     res = run_vacuum(
