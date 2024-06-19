@@ -4,19 +4,30 @@ from argparse import ArgumentParser
 from dataclasses import asdict, replace
 from pathlib import Path
 
+# Noticed that after running in a loop for a long time, memory runs out due to open plots
+# See https://github.com/matplotlib/matplotlib/issues/20300 for the horrible reality of using
+# GUI backends
+import matplotlib
 import numpy as np
 from rdkit import Chem
 from timemachine import constants
 from timemachine.fe import atom_mapping
 from timemachine.fe.free_energy import WaterSamplingParams
-from timemachine.fe.rbfe import (DEFAULT_HREX_PARAMS, run_complex, run_solvent,
-                                 run_vacuum)
+from timemachine.fe.rbfe import (
+    DEFAULT_HREX_PARAMS,
+    MDParams,
+    run_complex,
+    run_solvent,
+    run_vacuum,
+)
 from timemachine.fe.utils import read_sdf
 from timemachine.ff import Forcefield
 from timemachine.md import builders
 from timemachine.parallel.client import CUDAPoolClient
 from timemachine.parallel.utils import get_gpu_count
 from timemachine.potentials.jax_utils import pairwise_distances
+
+matplotlib.use("agg")
 
 
 def main():
@@ -73,7 +84,11 @@ def main():
         with open(output_path, "r") as ifs:
             data = json.load(ifs)
     if "md_params" in data:
-        assert data["md_params"] == asdict(md_params)
+        assert data["md_params"]["n_eq_steps"] == md_params.n_eq_steps
+        assert data["md_params"]["n_frames"] == md_params.n_frames
+        assert data["md_params"]["steps_per_frame"] == md_params.steps_per_frame
+        assert data["md_params"]["seed"] == md_params.seed
+        assert data["md_params"]["local_steps"] == md_params.local_steps
     else:
         data["md_params"] = asdict(md_params)
     if "max_windows" in data:
@@ -140,7 +155,7 @@ def main():
             )[0]
             update_output_data_with_edge_data(edge_data)
         core = np.array(edge_data["core"])
-        for leg_name in ["vacuum", "solvent", "complex"]:
+        for leg_name in ["vacuum"]:
             if f"{leg_name}_pred_ddg" not in edge_data:
                 if leg_name == "vacuum":
                     res = run_vacuum(
