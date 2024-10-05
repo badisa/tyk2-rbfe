@@ -58538,7 +58538,11 @@
       "vacuum_pred_ddg": -185.12606622830495,
       "vacuum_pred_ddg_err": 0.3817015359027088,
       "vacuum_windows": 24,
-      "vacuum_min_overlap": 0.28240468867176627
+      "vacuum_min_overlap": 0.28240468867176627,
+      "solvent_pred_ddg": -190.24896921842623,
+      "solvent_pred_ddg_err": 0.6343813256994225,
+      "solvent_windows": 24,
+      "solvent_min_overlap": 0.10298615467822035
     },
     {
       "mol_a": "4gih_blocker",
@@ -58652,7 +58656,11 @@
       "vacuum_pred_ddg": 63.361476023604624,
       "vacuum_pred_ddg_err": 0.2828407316579048,
       "vacuum_windows": 17,
-      "vacuum_min_overlap": 0.36979003343675415
+      "vacuum_min_overlap": 0.36979003343675415,
+      "solvent_pred_ddg": 63.61495238088607,
+      "solvent_pred_ddg_err": 0.4079155392849853,
+      "solvent_windows": 24,
+      "solvent_min_overlap": 0.18166491403400298
     },
     {
       "mol_a": "4gih_blocker",
@@ -58766,7 +58774,11 @@
       "vacuum_pred_ddg": -36.83505843760367,
       "vacuum_pred_ddg_err": 0.31391606058844734,
       "vacuum_windows": 19,
-      "vacuum_min_overlap": 0.3822867173962462
+      "vacuum_min_overlap": 0.3822867173962462,
+      "solvent_pred_ddg": -45.92121709652962,
+      "solvent_pred_ddg_err": 0.5529503436392039,
+      "solvent_windows": 24,
+      "solvent_min_overlap": 0.15059031531555864
     },
     {
       "mol_a": "4gih_blocker",
