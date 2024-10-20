@@ -10048,7 +10048,11 @@
       "solvent_pred_ddg": 1.9224234953058001,
       "solvent_pred_ddg_err": 0.5065798917574145,
       "solvent_windows": 24,
-      "solvent_min_overlap": 0.16755618627004662
+      "solvent_min_overlap": 0.16755618627004662,
+      "complex_pred_ddg": 3.0796141475640937,
+      "complex_pred_ddg_err": 0.6980063728368913,
+      "complex_windows": 24,
+      "complex_min_overlap": 0.08723637718984452
     },
     {
       "mol_a": "4gih_blocker",
