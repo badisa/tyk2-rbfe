@@ -158,39 +158,42 @@ def main():
         core = np.array(edge_data["core"])
         for leg_name in args.legs:
             if f"{leg_name}_pred_ddg" not in edge_data:
-                if leg_name == "vacuum":
-                    res = run_vacuum(
-                        mol_a,
-                        mol_b,
-                        core,
-                        ff,
-                        None,
-                        md_params,
-                        n_windows=n_windows,
-                        min_overlap=min_overlap,
-                    )
-                elif leg_name == "solvent":
-                    res, _, _ = run_solvent(
-                        mol_a,
-                        mol_b,
-                        core,
-                        ff,
-                        None,
-                        md_params,
-                        n_windows=n_windows,
-                        min_overlap=min_overlap,
-                    )
-                elif leg_name == "complex":
-                    res, _, _ = run_complex(
-                        mol_a,
-                        mol_b,
-                        core,
-                        ff,
-                        str(Path(args.pdb_file).expanduser()),
-                        md_params,
-                        n_windows=n_windows,
-                        min_overlap=min_overlap,
-                    )
+                try:
+                    if leg_name == "vacuum":
+                        res = run_vacuum(
+                            mol_a,
+                            mol_b,
+                            core,
+                            ff,
+                            None,
+                            md_params,
+                            n_windows=n_windows,
+                            min_overlap=min_overlap,
+                        )
+                    elif leg_name == "solvent":
+                        res, _, _ = run_solvent(
+                            mol_a,
+                            mol_b,
+                            core,
+                            ff,
+                            None,
+                            md_params,
+                            n_windows=n_windows,
+                            min_overlap=min_overlap,
+                        )
+                    elif leg_name == "complex":
+                        res, _, _ = run_complex(
+                            mol_a,
+                            mol_b,
+                            core,
+                            ff,
+                            str(Path(args.pdb_file).expanduser()),
+                            md_params,
+                            n_windows=n_windows,
+                            min_overlap=min_overlap,
+                        )
+                except Exception:
+                    continue
                 edge_data[f"{leg_name}_pred_ddg"] = float(np.sum(res.final_result.dGs))
                 edge_data[f"{leg_name}_pred_ddg_err"] = float(
                     np.linalg.norm(res.final_result.dG_errs)
