@@ -14468,7 +14468,11 @@
       "solvent_pred_ddg": 116.26684705189027,
       "solvent_pred_ddg_err": 0.5580341458262749,
       "solvent_windows": 24,
-      "solvent_min_overlap": 0.1269812185290689
+      "solvent_min_overlap": 0.1269812185290689,
+      "complex_pred_ddg": 125.6072214971581,
+      "complex_pred_ddg_err": 0.5806215107032748,
+      "complex_windows": 24,
+      "complex_min_overlap": 0.1176577551410147
     },
     {
       "mol_a": "4gih_blocker",
@@ -14626,7 +14630,11 @@
       "solvent_pred_ddg": 28.641314804134904,
       "solvent_pred_ddg_err": 0.3293982297074353,
       "solvent_windows": 18,
-      "solvent_min_overlap": 0.35768045767535284
+      "solvent_min_overlap": 0.35768045767535284,
+      "complex_pred_ddg": 53.06324989387094,
+      "complex_pred_ddg_err": 0.34192482762584747,
+      "complex_windows": 19,
+      "complex_min_overlap": 0.3206983900396291
     },
     {
       "mol_a": "4gih_blocker",
@@ -14744,7 +14752,11 @@
       "solvent_pred_ddg": 62.59659939636366,
       "solvent_pred_ddg_err": 0.4209568436491485,
       "solvent_windows": 24,
-      "solvent_min_overlap": 0.17452353244557064
+      "solvent_min_overlap": 0.17452353244557064,
+      "complex_pred_ddg": 60.90014372637272,
+      "complex_pred_ddg_err": 0.5371828374453076,
+      "complex_windows": 24,
+      "complex_min_overlap": 0.09456464152508706
     },
     {
       "mol_a": "4gih_blocker",
@@ -14862,7 +14874,11 @@
       "solvent_pred_ddg": 137.8592363532793,
       "solvent_pred_ddg_err": 0.5278525864820968,
       "solvent_windows": 24,
-      "solvent_min_overlap": 0.12525453256223176
+      "solvent_min_overlap": 0.12525453256223176,
+      "complex_pred_ddg": 159.94868767486497,
+      "complex_pred_ddg_err": 0.6385644985811435,
+      "complex_windows": 24,
+      "complex_min_overlap": 0.07247015875650044
     },
     {
       "mol_a": "4gih_blocker",
@@ -15020,7 +15036,11 @@
       "solvent_pred_ddg": 122.44419359943547,
       "solvent_pred_ddg_err": 0.2852604945869304,
       "solvent_windows": 17,
-      "solvent_min_overlap": 0.3329612995402484
+      "solvent_min_overlap": 0.3329612995402484,
+      "complex_pred_ddg": 147.95460800222884,
+      "complex_pred_ddg_err": 0.2988189276762496,
+      "complex_windows": 18,
+      "complex_min_overlap": 0.36001374491412474
     },
     {
       "mol_a": "4gih_blocker",
@@ -15178,7 +15198,11 @@
       "solvent_pred_ddg": 116.01855029337449,
       "solvent_pred_ddg_err": 0.3399443030476479,
       "solvent_windows": 21,
-      "solvent_min_overlap": 0.3420743957435006
+      "solvent_min_overlap": 0.3420743957435006,
+      "complex_pred_ddg": 145.32497526554073,
+      "complex_pred_ddg_err": 0.34087801251494154,
+      "complex_windows": 21,
+      "complex_min_overlap": 0.3529563747820265
     },
     {
       "mol_a": "4gih_blocker",
@@ -15336,7 +15360,11 @@
       "solvent_pred_ddg": 97.19286942944196,
       "solvent_pred_ddg_err": 0.3402365361947422,
       "solvent_windows": 18,
-      "solvent_min_overlap": 0.31443072019682533
+      "solvent_min_overlap": 0.31443072019682533,
+      "complex_pred_ddg": 124.13810687780281,
+      "complex_pred_ddg_err": 0.33557729694574734,
+      "complex_windows": 20,
+      "complex_min_overlap": 0.3847545911309618
     },
     {
       "mol_a": "4gih_blocker",
@@ -15454,7 +15482,11 @@
       "solvent_pred_ddg": 33.13545452891113,
       "solvent_pred_ddg_err": 0.4133030879418244,
       "solvent_windows": 24,
-      "solvent_min_overlap": 0.19299838902754307
+      "solvent_min_overlap": 0.19299838902754307,
+      "complex_pred_ddg": 46.84669510803024,
+      "complex_pred_ddg_err": 0.465542605225716,
+      "complex_windows": 24,
+      "complex_min_overlap": 0.12301184067466163
     },
     {
       "mol_a": "4gih_blocker",
@@ -15580,7 +15612,11 @@
       "solvent_pred_ddg": 116.16563773662087,
       "solvent_pred_ddg_err": 0.5572168579767315,
       "solvent_windows": 24,
-      "solvent_min_overlap": 0.13314434465428468
+      "solvent_min_overlap": 0.13314434465428468,
+      "complex_pred_ddg": 118.57685512445346,
+      "complex_pred_ddg_err": 0.6300250526946332,
+      "complex_windows": 24,
+      "complex_min_overlap": 0.08667115334652954
     },
     {
       "mol_a": "4gih_blocker",
@@ -15706,7 +15742,11 @@
       "solvent_pred_ddg": 87.09990238915292,
       "solvent_pred_ddg_err": 0.3549498399946218,
       "solvent_windows": 24,
-      "solvent_min_overlap": 0.273204334081213
+      "solvent_min_overlap": 0.273204334081213,
+      "complex_pred_ddg": 97.27930358079163,
+      "complex_pred_ddg_err": 0.42172497319048474,
+      "complex_windows": 24,
+      "complex_min_overlap": 0.2612626142849879
     },
     {
       "mol_a": "4gih_blocker",
@@ -15832,7 +15872,11 @@
       "solvent_pred_ddg": 96.07106083141,
       "solvent_pred_ddg_err": 0.34298468895482237,
       "solvent_windows": 24,
-      "solvent_min_overlap": 0.3428158959135649
+      "solvent_min_overlap": 0.3428158959135649,
+      "complex_pred_ddg": 102.76793929340343,
+      "complex_pred_ddg_err": 0.38833535141445413,
+      "complex_windows": 24,
+      "complex_min_overlap": 0.2956897641644465
     },
     {
       "mol_a": "4gih_blocker",
@@ -15950,7 +15994,11 @@
       "solvent_pred_ddg": -61.62921960075691,
       "solvent_pred_ddg_err": 0.4188392056645447,
       "solvent_windows": 24,
-      "solvent_min_overlap": 0.16401324474674484
+      "solvent_min_overlap": 0.16401324474674484,
+      "complex_pred_ddg": -58.91929751729261,
+      "complex_pred_ddg_err": 0.5529086413316869,
+      "complex_windows": 24,
+      "complex_min_overlap": 0.04455562083951066
     },
     {
       "mol_a": "4gih_blocker",
@@ -16068,7 +16116,11 @@
       "solvent_pred_ddg": -119.10026483993647,
       "solvent_pred_ddg_err": 0.48893846212817355,
       "solvent_windows": 24,
-      "solvent_min_overlap": 0.15575143181301615
+      "solvent_min_overlap": 0.15575143181301615,
+      "complex_pred_ddg": -119.98844995742395,
+      "complex_pred_ddg_err": 0.615335152291782,
+      "complex_windows": 24,
+      "complex_min_overlap": 0.07607502649703471
     },
     {
       "mol_a": "4gih_blocker",
