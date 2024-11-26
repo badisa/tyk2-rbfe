@@ -16238,7 +16238,11 @@
       "solvent_pred_ddg": 101.40997617706645,
       "solvent_pred_ddg_err": 0.42128026007622216,
       "solvent_windows": 24,
-      "solvent_min_overlap": 0.2114913845008529
+      "solvent_min_overlap": 0.2114913845008529,
+      "complex_pred_ddg": 129.4012897028021,
+      "complex_pred_ddg_err": 0.4750139228003397,
+      "complex_windows": 24,
+      "complex_min_overlap": 0.1765475686680838
     },
     {
       "mol_a": "4gih_blocker",
@@ -16364,7 +16368,11 @@
       "solvent_pred_ddg": 110.40570741171251,
       "solvent_pred_ddg_err": 0.49409392092982973,
       "solvent_windows": 24,
-      "solvent_min_overlap": 0.12773378334087157
+      "solvent_min_overlap": 0.12773378334087157,
+      "complex_pred_ddg": 121.3923675428756,
+      "complex_pred_ddg_err": 0.5736935903911425,
+      "complex_windows": 24,
+      "complex_min_overlap": 0.13505679485552952
     },
     {
       "mol_a": "4gih_blocker",
@@ -16490,7 +16498,11 @@
       "solvent_pred_ddg": 70.04281617353443,
       "solvent_pred_ddg_err": 0.46974821240074843,
       "solvent_windows": 24,
-      "solvent_min_overlap": 0.1359485779095264
+      "solvent_min_overlap": 0.1359485779095264,
+      "complex_pred_ddg": 81.8000159380206,
+      "complex_pred_ddg_err": 0.5166840971261197,
+      "complex_windows": 24,
+      "complex_min_overlap": 0.1792740554962783
     },
     {
       "mol_a": "4gih_blocker",
@@ -16608,7 +16620,11 @@
       "solvent_pred_ddg": 38.95789750916415,
       "solvent_pred_ddg_err": 0.4465027121603193,
       "solvent_windows": 24,
-      "solvent_min_overlap": 0.153323901373954
+      "solvent_min_overlap": 0.153323901373954,
+      "complex_pred_ddg": 39.09789126651929,
+      "complex_pred_ddg_err": 0.5254143279919986,
+      "complex_windows": 24,
+      "complex_min_overlap": 0.134038329025345
     },
     {
       "mol_a": "4gih_blocker",
@@ -16766,7 +16782,11 @@
       "solvent_pred_ddg": 96.65045041130485,
       "solvent_pred_ddg_err": 0.3935647962589961,
       "solvent_windows": 24,
-      "solvent_min_overlap": 0.3042400404958514
+      "solvent_min_overlap": 0.3042400404958514,
+      "complex_pred_ddg": 129.74375225469308,
+      "complex_pred_ddg_err": 0.3984834580739435,
+      "complex_windows": 24,
+      "complex_min_overlap": 0.2493540237004493
     },
     {
       "mol_a": "4gih_blocker",
