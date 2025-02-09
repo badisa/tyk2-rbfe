@@ -22,10 +22,6 @@ from timemachine.fe.rbfe import (
 )
 from timemachine.fe.utils import read_sdf
 from timemachine.ff import Forcefield
-from timemachine.md import builders
-from timemachine.parallel.client import CUDAPoolClient
-from timemachine.parallel.utils import get_gpu_count
-from timemachine.potentials.jax_utils import pairwise_distances
 
 matplotlib.use("agg")
 
@@ -137,7 +133,7 @@ def main():
 
     for mol_name_a, mol_name_b in edges:
         mol_a = mols_by_name[mol_name_a]
-        # Using an old copy of the charge cache, just pretend like the are ELF10
+        # Using an old copy of the charge cache, just pretend the charges are ELF10
         mol_a.SetProp("AM1ELF10Cache", mol_a.GetProp("AM1Cache"))
         mol_b = mols_by_name[mol_name_b]
         mol_b.SetProp("AM1ELF10Cache", mol_b.GetProp("AM1Cache"))
