@@ -31,7 +31,7 @@ matplotlib.use("agg")
 
 
 def main():
-    parser = ArgumentParser(description="Generate star map as a JSON file")
+    parser = ArgumentParser(description="Generate RBFE predictions")
     parser.add_argument("sdf_file", help="Path to sdf file containing mols")
     parser.add_argument("pdb_file", help="Path to pdb file containing structure")
     parser.add_argument("edges_json", help="Json list containing pairs of mol names")
