@@ -124,8 +124,9 @@ def main():
     #   "mol_a": "name_a",
     #   "mol_b": "name_b",
     #   "core": list of pairs
-    #   "<leg_name>__pred_ddg": float
+    #   "<leg_name>_pred_ddg": float
     #   "<leg_name>_pred_ddg_err": float
+    #   "<leg_name>_min_overlap": float
     #   "<leg_name>_windows": int
     # }
 
