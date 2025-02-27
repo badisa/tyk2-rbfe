@@ -35,6 +35,9 @@ def main():
             Chem.MolToSmiles(reference_mol),
             0.0,
             0.0,
+            0.0,
+            0.0,
+            0.0,
             float(reference_mol.GetProp(GLIDE_SCORE_PROPERTY)),
         )
     )
@@ -59,11 +62,14 @@ def main():
                     Chem.MolToSmiles(mol),
                     pred_ddg,
                     pred_ddg_err,
+                    data["vacuum_pred_ddg"],
+                    data["solvent_pred_ddg"],
+                    data["complex_pred_ddg"],
                     float(mol.GetProp(GLIDE_SCORE_PROPERTY)),
                 )
             )
 
-    headers = ["mol_name", "SMILES", "dG_bind", "dG_bind_err", "Glide_score"]
+    headers = ["mol_name", "SMILES", "dG_bind", "dG_bind_err", "vacuum_dG_bind", "solvent_dG_bind", "complex_dG_bind", "Glide_score"]
 
     with open(results_dir / "active_learning_inputs.csv", "w", newline="") as ofs:
         csv_writer = csv.writer(ofs)
