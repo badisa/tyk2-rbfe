@@ -19,3 +19,6 @@ Docked poses come from https://zenodo.org/records/13759490.
 - Open Forcefield 2.2.0 appears to reduce the performance of some RBFE predictions, 2.0.0 is preferred by Timemachine.
 - Alignment of initial ligands were performed in with the expectation of a dual topology approach, alignment may be poor in some cases.
 - Region around ligands for water sampling is not adjusted for each complex leg, may be too small in some cases.
+
+## Acknowledgments
+* Jayanth Shankar - Contributed several GPUs over the course of the project, not to speak of the entertaining conversations over the year(s).
