@@ -39,6 +39,7 @@ def main():
             0.0,
             0.0,
             float(reference_mol.GetProp(GLIDE_SCORE_PROPERTY)),
+            0,
         )
     )
     for result_path in results_dir.glob("*.json"):
@@ -56,6 +57,7 @@ def main():
             pred_ddg_err = np.linalg.norm(
                 [data["complex_pred_ddg_err"], data["complex_pred_ddg_err"]]
             )
+            num_dummy_atoms = reference_mol.GetNumAtoms() + mol.GetNumAtoms() - (2 * len(data["core"]))
             csv_rows.append(
                 (
                     data["mol_b"],
@@ -66,10 +68,11 @@ def main():
                     data["solvent_pred_ddg"],
                     data["complex_pred_ddg"],
                     float(mol.GetProp(GLIDE_SCORE_PROPERTY)),
+                    num_dummy_atoms,
                 )
             )
 
-    headers = ["mol_name", "SMILES", "dG_bind", "dG_bind_err", "vacuum_dG_bind", "solvent_dG_bind", "complex_dG_bind", "Glide_score"]
+    headers = ["mol_name", "SMILES", "dG_bind", "dG_bind_err", "vacuum_dG_bind", "solvent_dG_bind", "complex_dG_bind", "Glide_score", "dummy_atoms"]
 
     with open(results_dir / "active_learning_inputs.csv", "w", newline="") as ofs:
         csv_writer = csv.writer(ofs)
