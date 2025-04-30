@@ -1,5 +1,10 @@
 # TYK2 Active Learning
 
+## WARNING
+This project was cut short, but ~4100 of the 10,000 nodes have dGs and have been summarized in `results/active_learning_inputs.csv`. Combined with the (notebook)[https://github.com/PatWalters/practical_cheminformatics_tutorials/blob/main/active_learning/active_regression.ipynb] from (Pat Walters)[https://github.com/PatWalters] this is a reasonable starting point. In the future I hope to include the notebook and present the differences in the predictions from the original set.
+
+## Goals
+
 The goal is to take the data from (Optimizing active learning for free energy calculations)[https://www.sciencedirect.com/science/article/pii/S2667318522000204] and regenerate vacuum, solvent and complex RBFE calculations using (Timemachine)[https://github.com/proteneer/timemachine], the package used within the paper. The goal is to use RBFE rather than the no longer developed RABFE method to verify that the active learning is applicable to RBFE.
 
 This is to be done on spare GPUs I have, which may be prohibitively slow to do in practice. The computations will be run on different machines, GPUs, CPUs, cuda architectures, etc, so the results may not be completely reproducible, but all of the scripts will be as similar as possible and as much information as reasonable will be tracked for each computation.
@@ -21,4 +26,4 @@ Docked poses come from https://zenodo.org/records/13759490.
 - Region around ligands for water sampling is not adjusted for each complex leg, may be too small in some cases.
 
 ## Acknowledgments
-* Jayanth Shankar - Contributed several GPUs over the course of the project, not to speak of the entertaining conversations over the year(s).
+* Jayanth Shankar - Contributed several GPUs to this.
