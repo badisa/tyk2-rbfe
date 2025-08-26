@@ -22,8 +22,8 @@ Docked poses come from https://zenodo.org/records/13759490.
 
 - Re-using AM1 charges from original predictions, not as robust as AM1ELF-10 charges which is Timemachine's current default.
 - Open Forcefield 2.2.0 appears to reduce the performance of some RBFE predictions, 2.0.0 is preferred by Timemachine.
-- Alignment of initial ligands were performed in with the expectation of a dual topology approach, alignment may be poor in some cases.
+- Alignment of initial ligands were performed with the expectation of a dual topology approach, atom mapping may be poor in some cases.
 - Region around ligands for water sampling is not adjusted for each complex leg, may be too small in some cases.
 
 ## Acknowledgments
-* Jayanth Shankar - Contributed several GPUs to this.
+* Jayanth Shankar - Contributed several GPUs.
